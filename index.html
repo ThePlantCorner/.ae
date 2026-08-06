@@ -118,6 +118,8 @@ ul{list-style:none;}
   gap:10px;
 }
 .eyebrow::before{content:"";width:26px;height:1px;background:var(--forest);display:inline-block;}
+.eyebrow-on-dark{color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.5);}
+.eyebrow-on-dark::before{background:rgba(255,255,255,.85);}
 .section{padding:110px 8vw;position:relative;}
 @media (max-width:900px){.section{padding:70px 6vw;}}
 h1,h2,h3,h4{font-family:var(--serif);font-weight:700;color:var(--charcoal);line-height:1.12;letter-spacing:0;}
@@ -802,9 +804,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   </section>
 
   <section class="section" id="categories">
-    <span class="eyebrow center" style="display:flex;justify-content:center;">Curated Collections</span>
-    <h2 class="section-title center">Find Your Perfect Plant</h2>
-    <p class="section-sub center">Browse plants by the role they'll play in your home — from air‑purifying companions to low‑maintenance statement pieces.</p>
+    <span class="eyebrow center reveal eyebrow-on-dark" style="display:flex;justify-content:center;">Curated Collections</span>
+    <h2 class="section-title center reveal" style="transition-delay:.12s;color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.4);">Find Your Perfect Plant</h2>
+    <p class="section-sub center reveal" style="transition-delay:.24s;color:rgba(255,255,255,.9);text-shadow:0 2px 10px rgba(0,0,0,.5);">Browse plants by the role they'll play in your home — from air‑purifying companions to low‑maintenance statement pieces.</p>
     <div class="cat-grid" id="catGrid"></div>
   </section>
 
