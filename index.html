@@ -62,14 +62,14 @@
   --shadow-soft: 0 14px 34px -16px rgba(30,45,20,0.14);
   --radius: 22px;
   --radius-sm: 12px;
-  --glass-bg:rgba(255,255,255,.4);
-  --glass-bg-strong:rgba(255,255,255,.62);
-  --glass-border:rgba(255,255,255,.55);
-  --glass-shadow:0 8px 32px -8px rgba(36,55,26,.22), inset 0 1px 0 rgba(255,255,255,.5);
+  --glass-bg:rgba(255,255,255,.2);
+  --glass-bg-strong:rgba(255,255,255,.32);
+  --glass-border:rgba(255,255,255,.3);
+  --glass-shadow:0 8px 32px 0 rgba(0,0,0,.37), inset 0 1px 0 rgba(255,255,255,.35);
   --glass-blur:18px;
-  --glass-dark-bg:rgba(24,38,16,.5);
-  --glass-dark-border:rgba(255,255,255,.16);
-  --glass-dark-shadow:0 8px 32px -8px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.08);
+  --glass-dark-bg:rgba(20,32,14,.4);
+  --glass-dark-border:rgba(255,255,255,.22);
+  --glass-dark-shadow:0 8px 32px 0 rgba(0,0,0,.37), inset 0 1px 0 rgba(255,255,255,.1);
   --serif: 'Baskerville Old Face', 'Libre Baskerville', Georgia, serif;
   --sans: 'Poppins', sans-serif;
 }
@@ -144,10 +144,10 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:700;color:var(--charcoal);line-
 .hero-btns .btn-primary{border-radius:100px 0 0 100px;box-shadow:none;}
 .hero-btns .btn-outline{border-radius:0 100px 100px 0;margin-left:-1px;box-shadow:var(--shadow-soft);}
 .glass{
-
-  background:rgba(20,26,20,0.55);
-  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
-  border:1px solid var(--line);
+  background:var(--glass-dark-bg);
+  backdrop-filter:blur(var(--glass-blur));-webkit-backdrop-filter:blur(var(--glass-blur));
+  border:1px solid var(--glass-dark-border);
+  box-shadow:var(--glass-dark-shadow);
 }
 
 /* ---------- Nav ---------- */
